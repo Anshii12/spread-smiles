@@ -1,0 +1,276 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* font-family: 'Dancing Script', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'Ubuntu', sans-serif; */
+
+body{
+    
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+}
+
+/* Home styling */
+
+header{
+    width: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 2;
+    position: absolute;
+}
+
+header .logo-container{
+    font-family: 'Dancing Script', cursive;
+    color: wheat;
+    font-size: 1.7rem;
+}
+
+header .logo-container > h2{
+    padding: 15px 20px;
+    height: 75px;
+}
+
+header .header-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+   height: 80px;
+   text-decoration: none;
+   padding: 40px 0;
+   line-height: 80px;
+   font-size: 27px;
+   margin-right: 45px;
+   color: white;
+   transition: 0.5s;
+}
+
+header nav ul li a:hover , header nav ul li a:active {
+    border-bottom: 4px solid lightseagreen;
+}
+
+.banner{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('./imges/bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+}
+
+
+.banner h1{
+    line-height: 480px;
+    font-size: 3.9rem;
+    color: lightgoldenrodyellow;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.banner p{
+    color: whitesmoke;
+    font-size: 1.8rem;
+    margin: -180px auto;
+    width: 50%;
+    font-style: italic;
+}
+
+.donate-btn {
+    text-align: center;
+}
+
+button {
+    margin-top: 280px;
+    border: none;
+    background:none;
+    padding: 15px 10px;
+    font-size: 1.7rem;
+    color: lightgrey;
+    background-color: darkslategray;
+    outline: none;
+    border-radius: 10px ;
+}
+
+/* Home styling ends */
+
+/* Mission styling starts */
+
+.section-heading{
+  width: 300px;
+  border-bottom: 3px solid red;
+  font-size: 2.2rem;
+  font-weight: lighter;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  padding: 10px 0;
+}
+
+.section-heading h2{
+    text-align: center;
+}
+
+.mission-container .container p {
+   text-align: center;
+   margin: 10px auto;
+   font-size: 20px;
+   width: 70%;
+}
+
+section {
+   position: relative;
+   padding: 75px 0px; 
+   background-color: rgba(0,0,0,0.1);
+}
+
+#ourMission .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    height: 250px;
+    position: relative;
+    margin-bottom: 200px;
+}
+
+#ourMission .cards > div {
+    width: 350px;
+    background-color: lightslategray;
+    padding: 36px;
+    color: #fff;
+    margin: auto;
+}
+
+div.head {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+div.cards > p  {
+    text-align: center;
+}
+
+/* mission styling ended */
+
+/* contact us styling starts */
+
+.about{
+    background-color: black;
+    color: white;
+
+}
+
+div.contact-heading{
+    font-size: 35px;
+    font-weight: lightest;
+    border-bottom: 3px solid lightgoldenrodyellow;
+    width: 40%;
+    margin: 20px auto;
+}
+
+.contact-para{
+    font-size: 17px;
+    text-align: center;
+    margin-bottom:45px ;
+}
+
+.footer-container {
+    margin-top: 5px;
+    display: flex;
+    padding: 30px; 
+    justify-content: space-evenly;
+}
+
+.newsletter {
+    width: 50%;
+}
+
+.newsletter p{
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+input{
+    font-size: large;
+    margin-top: 20px;
+    padding: 15px 25px;
+}
+
+input::placeholder {
+    color: lightslategray;
+}
+
+.contact-container.head{
+    margin-bottom: 20px;
+}
+
+.contact-container > p{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+
+
+
+/* Pay u button */
+form {
+    margin-top: 250px;
+    font-size: larger;
+    height: 98px;
+}
+
+
+/* responsiveness */
+
+@media screen and (max-width: 1200px){
+    .banner h1{
+        line-height: 330px;
+        margin-bottom: 130px;
+    }
+
+    
+
+
+    #ourMission .cards {
+        justify-content: space-around;
+        height: auto;
+    }
+
+    #ourMission .cards > div {
+        margin: 20px 0;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .banner h1{
+        line-height: 130px;
+        margin-bottom: 130px;
+    }
+
+    header{
+         margin-bottom: 200px;
+    }
+}   
